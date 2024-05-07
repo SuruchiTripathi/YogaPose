@@ -1,0 +1,120 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/yoga.png' %}">
+    <title>Pose Pioneer</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        /* Define animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInFromLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+            <img class="logo" src="{% static 'images/yoga.png' %}" alt="reload" >
+            <h1 class="heading">VIRTUAL YOGA TRAINER</h1>
+            <a href="{% url 'user_signin' %}"><h1>POSE PIONEER</h1></a>
+    </div>
+    <hr class="underline">
+    <h1 class="subtle">Welcome to the world of YOGA</h1>
+    <div class="body1">
+        <nav>
+            <img src="{% static 'images/Meditate.png' %}" alt="" height="500px" width="500px">
+        </nav>
+        <nav class="animated slideInFromLeft">
+            <h1 class="nav-heading"><u>Pose Pioneer (Introduction)</u></h1>
+            <p>PosePioneer a user-friendly yoga training web application that makes learning and training new and relevant yoga postures a breeze.
+                PosePioneer is a software that aims to make learning and practicing yoga a breeze and try to automate the culture of our country and spread yoga to overseas and in country as well. After the Covid pandemic, a majority of people are shifting and practicing yoga to improve their lifestyle and maintain a healthy and fit body, hence we aim to create a web application that teaches yoga to the user and also monitor the posture of the user and ensure the correct and genuine delivery of the Yoga postures. The Yoga Posture Detection and Correction project aim to leverage computer vision and machine learning techniques to develop a system capable of identifying and correcting yoga postures in real-time. With the increasing popularity of yoga and the widespread adoption of technology in fitness practices, such a system could significantly enhance practitioners' experiences, experiences, providing valuable feedback to improve their form and prevent injuries. 
+                After the Covid-19 Pandemic, everyone wishes to maintain a healthy lifestyle and adopt practices such as, healthy diet, fitness, and yoga. Yoga can pose to be quite difficult to learn and adopt, to solve that problem we aim to create a web application that teaches yoga postures(asanas) to the user and also detect/correct them to make sure they are performing the asanas correctly and taking the right steps in their journey to learn yoga.
+The primary objective of our project is to automate the learning of yoga asanas and make the teaching and learning of yoga posture a breeze. The objective of a Yoga Posture Teaching software is to provide a comprehensive platform for users to effectively learn yoga postures. The objective of an Automated Yoga Posture Teaching software can be multifaceted, aiming to leverage technology to enhance the practice and teaching of yoga
+
+                </p>
+        </nav>
+    </div>
+    <div class="body2">
+        <nav>
+            <h1 class="nav-heading"><u>Yoga (Aasana</u>)</h1>
+            <p>Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India and aim to control and still the mind, recognizing a detached witness-consciousness untouched by the mind (Chitta) and mundane suffering (Duḥkha). The relaxation techniques incorporated in yoga can lessen chronic pain, such as lower back pain, arthritis, headaches and carpal tunnel syndrome, Yoga can also lower blood pressure and reduce insomnia.
+                Physical benefits: increased flexibility, muscle strength and tone, improved respiration, energy and vitality, maintaining a balanced metabolism, weight reduction, cardio and circulatory health, improved athletic performance, protection from injury.
+                Yoga Can Support the Immune System and Improve Overall Health. 
+                Mental benefits: helps a person manage stress, including back or neck pain, sleeping problems, headaches, drug abuse, and an inability to concentrate. Yoga can be very effective in developing coping skills and reaching a more positive outlook on life.</p>
+        </nav>
+        <nav>
+            <img src="{% static 'images/aasana.png' %}" alt="" height="500px" width="500px">
+        </nav>        
+    </div>
+    <div class="body1">
+        <nav>
+            <img class="mind" src="{% static 'images/Mindfulness.png' %}" alt="" height="500px" width="500px">
+        </nav>
+        <nav>
+            <h1 class="nav-heading"><u>Mindfulness (Smṛti</u>)</h1>
+            <p>Mindfulness can be formal or informal. Mindfulness as an informal practice is when we choose to pay close attention to what is occurring in the present moment while doing routine activities. It could be something simple like focusing on the feeling of the soles of your feet touching the ground while standing. You can practice it while eating, walking or cleaning your teeth. For example, practising mindfulness when eating means not just knowing that you are eating but being with the whole process – feeling the taste, the texture of the food changing, how you chew, what emotions or thoughts arise and how they change.
+                On the other hand, formal mindfulness practice is more intensive. Here, we specifically set aside time to explore being mindful of what we are sensing, feeling or thinking. An example of this is mindfulness meditation. It helps us look into our minds at a deeper level and with regular practise can yield deeper insights into our mind.</p>
+        </nav>
+    </div>
+    <div class="body2">
+        <nav>
+            <h1 class="nav-heading"><u>Healthiness (Swastha</u>)</h1>
+            <p> 
+                1. Improved Flexibility: Regular practice of yoga can increase flexibility and range of motion in muscles and joints, which can help prevent injuries and improve overall mobility. <br>
+                2. Increased Strength: Many yoga poses require holding positions that engage various muscle groups, leading to increased strength and muscle tone over time.<br>
+                3. Better Posture: Yoga helps improve posture by strengthening the muscles that support the spine and encouraging awareness of body alignment.<br>
+                4. Stress Reduction: Yoga incorporates breathing exercises and meditation, which can help reduce stress levels and promote relaxation. This can have positive effects on mental health and overall well-being.<br>
+                5.Enhanced Breathing: Yoga emphasizes deep, diaphragmatic breathing techniques, which can improve lung function, increase oxygen intake, and promote relaxation.<br>
+                6.Improved Circulation: The combination of yoga poses and controlled breathing can enhance blood circulation throughout the body, which can have various health benefits, including better cardiovascular health.<br>
+                7. Pain Relief: Yoga has been shown to alleviate chronic pain conditions such as lower back pain, arthritis, and headaches by improving flexibility, strength, and relaxation.<br>
+                8. Better Sleep: Practicing yoga regularly can help improve sleep quality by reducing stress, promoting relaxation, and enhancing overall physical and mental well-being.<br>
+                9. Management of Chronic Conditions: Yoga has been found to be beneficial for managing various chronic health conditions, including hypertension, diabetes, asthma, and autoimmune disorders.<br>
+                10. Weight Management: Some styles of yoga, such as vinyasa or power yoga, can provide a cardiovascular workout and help burn calories, contributing to weight loss or weight management goals.<br>
+                </p>
+            
+        </nav>
+        <nav>
+            <img src="{% static 'images/1.png' %}" alt="" height="500px" width="500px">
+        </nav>        
+    </div>
+    <div class="body1">
+        <nav>
+            <img src="{% static 'images/2.png' %}" alt="" height="500px" width="500px">
+        </nav>
+        <nav>
+            <h1 class="nav-heading"><u>Peaceful (Sāntih</u>)</h1>
+            <p>1. Yoga Can Decrease Stress
+                One of the primary reasons many yoga fanatics are initially drawn to the practice is for the stress-relieving benefits of yoga. In fact, most people cite feeling immediate stress relief after even just a few yoga poses or a single session of yoga. Yoga decreases the production of cortisol, a key stress hormone, and increases mindfulness and a sense of inner peace, both of which alleviate stress and help you feel calmer.
+                <br> 2. Yoga Can Help Manage Anxiety
+                While it’s not entirely clear exactly how yoga can help people manage anxiety, there’s quite an extensive body of research demonstrating the ability of a consistent yoga practice to reduce anxiety and even symptoms of PTSD. The emphasis on mindfulness, being present, and honing in on the awareness of your breath may contribute to finding a sense of peace.
+                <br>3. Yoga Can Improve Your Mood and Mitigate Depression
+                Any form of exercise can produce endorphins and increase mood. Yoga has been studied extensively, and seems particularly effective at alleviating depression, and improving outlook and overall sense of wellbeing. The anti-depressant effect of yoga is due to the fact that yoga decreases the level of cortisol in the body, which is a stress hormone that can inhibit levels of serotonin. Serotonin is a neurotransmitter that elevates mood and improves your sense of wellbeing, so by lowering cortisol, yoga enables the body to produce more serotonin to feel better.</p>
+        </nav>
+    </div>
+    <div class="body2">
+        <nav>
+            <h1 class="nav-heading"><u>Flexibility (Prasrabhi</u>)</h1>
+            <p> Yoga Increases Flexibility and Balance of the Body and Mind
+                Flexibility and balance in yoga extend beyond the physical poses and positions of your body on the mat. Yoga emphasizes flexibility and balance of the mind as well, teaching you to be more open-minded, adaptable, present, gentle on yourself, and emotionally open and connected. This may sound somewhat airy-fairy, but many people who take up yoga report that while they initially felt somewhat turned off or intimidated by the spiritual/emotional side of yoga, they now appreciate that aspect of the discipline nearly as much (if not more) than the physical work itself.
+                <br> Yoga Increases Mobility
+                We tend to lose mobility of our joints and muscles as we age. The flexibility work in yoga helps prevent this decline and keeps us feeling more youthful. Yoga poses increase the range of motion of joints, improve spinal mobility and flexibility, and reduce pain associated with stiffness.</p>
+        </nav>
+        <nav>
+            <img src="{% static 'images/3.png' %}" alt="" height="500px" width="500px">
+        </nav>        
+    </div>
+</body>
+</html>

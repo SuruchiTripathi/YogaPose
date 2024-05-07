@@ -1,0 +1,94 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Knowledge</title>
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="icon" href="{% static 'images/Monk-logo.png' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <style>
+        /* Add any custom styles here */
+        .row {
+            display: flex;
+        }
+
+        .video-container,
+        .text-container {
+            flex: 1;
+            margin: 75px;
+        }
+
+        .text-container p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="{% url 'blog' %}" class="anch">
+            <img class="logo" src="{% static 'images/Myproject-2.png' %}" alt="Monk-logo"></a>
+        <div class="watermark1">
+            <a href="{% url 'blog' %}" class="anch">
+                <img src="{% static 'images/watermark/watermark (6).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (7).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (8).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (5).png' %}" class="watermark2" alt="">
+                <img src="{% static 'images/watermark/watermark (9).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (10).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (11).png' %}" class="watermark" alt="">
+            </a>
+        </div>
+
+        <div class="nav">
+            <a class="nav-link" href="{% url 'levelselection' %}">Home</a>
+            <a class="nav-link" href="{% url 'profile' %}">Profile</a>
+            <a class="nav-link" href="{% url 'signout' %}">SignOut</a>
+        </div>
+    </nav>
+    <div class="container-fluid h-100">
+        <div class="row h-50">
+            <div class="col-12 p-0">
+                <h1 class="text-center mt-2">Tree Pose Tutorial</h1>
+            </div>
+        </div>
+        <div class="row d-flex">
+            <div class="col-12 col-md-6 p-0 video-container ml-5">
+                <!-- Place your video in a styled container -->
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wdln9qWYloU?start=3"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-12 col-md-6 p-4 text-container mr-5">
+                <!-- Add the benefits and procedure of the asana here -->
+                <p>
+                    Vrikshasana, also known as the Tree Pose, is a well-known standing and balancing yoga pose in Hatha Yoga. This asana is specifically mentioned in the ancient text known as Gheraṇḍasaṃhitā, which enumerates 32 basic yoga postures. The name “Vrikshasana” is derived from the Sanskrit word “vriksha,” which translates as “tree,” and the posture indeed mimics the steady and graceful posture of a tree, symbolizing balance and stability.
+                <br> This asana is known for its ability to improve physical balance, stability, and concentration. It symbolizes the connection between the human mind and the natural world, and reflects the balance and strength of a tree. What makes Tree Pose different from many other yoga poses is its encouragement for practitioners to keep their eyes open, promoting mindfulness and inner harmony.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="{% url 'result' %}" class="btn btn-primary btn-lg mx-auto">Start</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

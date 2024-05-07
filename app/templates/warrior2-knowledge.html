@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warrior2 Knowledge</title>
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="icon" href="{% static 'images/Monk-logo.png' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <style>
+        /* Add any custom styles here */
+        .row {
+            display: flex;
+        }
+
+        .video-container,
+        .text-container {
+            flex: 1;
+            margin: 75px;
+        }
+
+        .text-container p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="{% url 'blog' %}" class="anch">
+            <img class="logo" src="{% static 'images/Myproject-2.png' %}" alt="Monk-logo"></a>
+        <div class="watermark1">
+            <a href="{% url 'blog' %}" class="anch">
+                <img src="{% static 'images/watermark/watermark (6).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (7).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (8).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (5).png' %}" class="watermark2" alt="">
+                <img src="{% static 'images/watermark/watermark (9).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (10).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (11).png' %}" class="watermark" alt="">
+            </a>
+        </div>
+
+        <div class="nav">
+            <a class="nav-link" href="{% url 'levelselection' %}">Home</a>
+            <a class="nav-link" href="{% url 'profile' %}">Profile</a>
+            <a class="nav-link" href="{% url 'signout' %}">SignOut</a>
+        </div>
+    </nav>
+    <div class="container-fluid h-100">
+        <div class="row h-50">
+            <div class="col-12 p-0">
+                <h1 class="text-center mt-2">Warrior 2 Pose Tutorial</h1>
+            </div>
+        </div>
+        <div class="row d-flex">
+            <div class="col-12 col-md-6 p-0 video-container ml-5">
+                <!-- Place your video in a styled container -->
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pJhevMZfOHA?start=3"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-12 col-md-6 p-4 text-container mr-5">
+                <!-- Add the benefits and procedure of the asana here -->
+                <p>Virabhadrasana 2 (Warrior 2 Pose), named after Hindu god who incarnated as a human, enhances the strength and stamina of beginner and advanced yogis alike. In the pose, your front knee bends to create a stretch in your hips, your arms engage and extend straight out from your shoulders, and your gaze, or dristhi, remains calm and steady toward your front hand. It is the second of three poses dedicated to Virabhadra. <br>
+                    When you stay in the pose for any length of time, you strengthen your resolve and focus. Remain internally focused on your physical and mental sensations. Become aware of any discomfort and discern whether your desire to straighten your leg and release your arms comes from a physical need or a psychological want. Always act according to your need in the moment. This discernment is the discipline and strength of a true warrior.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="{% url 'result' %}" class="btn btn-primary btn-lg mx-auto">Start</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
